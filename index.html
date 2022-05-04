@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
-    <link rel="stylesheet" href="reset.css">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,20 +19,20 @@
         <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
         <form class="survey" id="survey-form" action="">
             <br><label  for="NAME" id="name">Name
-            <br><input class="info" type="text" name="NAME" placeholder="Enter your name" id="name-label">
+            <br><input class="info" type="text" name="NAME" placeholder=" Enter your name" id="name-label">
            </label><br>
 
            <label   for="E-MAIL" id="e-mail">E-Mail
-            <br><input class="info" type="email" name="E-MAIL" placeholder="Enter your e-mail" id="email-label">
+            <br><input class="info" type="email" name="E-MAIL" placeholder=" Enter your e-mail" id="email-label">
            </label><br>
 
            <label  for="AGE" id="number" >Age(optional)
-            <br><input class="info" type="number" name="AGE" placeholder="Age" max="100" min="1" id="number-label">
+            <br><input class="info" type="number" name="AGE" placeholder=" Age" max="100" min="1" id="number-label">
            </label><br>
 
            <div><label for="">Which option best describes your current role?</label><br>
-           <select  name="" id="dropdown">
-            <option value="Select Curret Role">Select Curret Role</option>  
+           <select class="form__select" name="" id="dropdown">
+            <option value="Select Curret Role">Select current role</option>  
             <option value="Select Curret Role">Student</option>
             <option value="Select Curret Role">Full-Time Job</option>
             <option value="Select Curret Role">FUll-Time Learner</option>
@@ -39,17 +42,25 @@
 
            <label for="">Would you recommend freeCodeCamp to a friend?
 
-            <br><input  type="radio" id="Definitely" name="Definitely-Maybe-NotSure" value="Definitely">
-            <lable for="">Definitely</lable><br>
-            <input type="radio" id="Maybe" name="Definitely-Maybe-NotSure" value="Maybe">
-            <lable for="">Maybe</lable><br>
-            <input type="radio" id="Not sure" name="Definitely-Maybe-NotSure" value="Not sure">
-            <lable for="">Not sure</lable><br>
+            <br>
+            <input class="container" type="radio" id="Definitely" name="Definitely-Maybe-NotSure" value="Definitely">
+            <span class="checkmark"></span>
+            <lable for="">Definitely</lable>
+            <br>
+            <input class="container" type="radio" id="Maybe" name="Definitely-Maybe-NotSure" value="Maybe">
+            <span class="checkmark"></span>
+            <lable for="">Maybe</lable>
+            <br>
+            <input class="container" type="radio" id="Not sure" name="Definitely-Maybe-NotSure" value="Not sure">
+            <span class="checkmark"></span>
+            <lable for="">Not sure</lable>
+            <br>
 
            </label><br>
            <label for="">What is your favorite feature of freeCodeCamp?<br></label>
-           <select  name="" id="dropdown">
-            <option value="Select an option">Select an option</option>
+           <select class="form__select"  name="" id="dropdown">
+            <option value="Select an option">Select an option
+            </option>
             <option value="Select an option">Challenges</option>  
             <option value="Select an option">Projects</option>
             <option value="Select an option">Community</option>
@@ -59,44 +70,53 @@
            
           <label for="">What would you like to see improved? (Check all that apply)<br></label>
 
-                <input type="checkbox" id="" name="" value="Front-end Projects" checked>
+                <input class="container" type="checkbox" check="checked" id="" name="" value="Front-end Projects" checked>
+                <span class="checkmark"></span>
                 <lable for="Front-end Projects">Front-end Projects</lable><br>
 
-                <input type="checkbox" id="" name="" value="Back-end Projects">
+                <input class="container" type="checkbox" check="checked" id="" name="" value="Back-end Projects">
+                <span class="checkmark"></span>
                 <lable for="Back-end Projects">Back-end Projects</lable><br>
 
-                <input type="checkbox" id="" name="" value="Data Visualization">
+                <input class="container" type="checkbox" check="checked" id="" name="" value="Data Visualization">
+                <span class="checkmark"></span>
                 <lable for="Data Visualization">Data Visualization</lable><br>
 
-                <input type="checkbox" id="" name="" value="Challenges">
+                <input class="container" type="checkbox" check="checked" id="" name="" value="Challenges">
+                <span class="checkmark"></span>
                 <lable for="Challenges">Challenges</lable><br>
 
-                <input type="checkbox" id="" name="" value="Open Source Community">
+                <input class="container" type="checkbox" check="checked" id="" name="" value="Open Source Community">
+                <span class="checkmark"></span>
                 <lable for="Open Source Community">Open Source Community</lable><br>
 
-                <input type="checkbox" id="" name="" value="Gitter help rooms">
+                <input class="container" type="checkbox" check="checked" id="" name="" value="Gitter help rooms">
+                <span class="checkmark"></span>
                 <lable for="Gitter help rooms">Gitter help rooms</lable><br>
 
-                <input type="checkbox" id="" name="" value="Videos">
+                <input class="container" type="checkbox" check="checked" id="" name="" value="Videos">
+                <span class="checkmark"></span>
                 <lable for="Videos">Videos</lable><br>
 
-                <input type="checkbox" id="" name="" value="City Meetups">
+                <input class="container" type="checkbox" check="checked" id="" name="" value="City Meetups">
+                <span class="checkmark"></span>
                 <lable for="City Meetups">City Meetups</lable><br>
 
-                <input type="checkbox" id="" name="" value="Wiki">
+                <input class="container" type="checkbox" check="checked" id="" name="" value="Wiki">
+                <span class="checkmark"></span>
                 <lable for="Wiki">Wiki</lable><br>
 
-                <input type="checkbox" id="" name="" value="Forum">
+                <input class="container" type="checkbox" check="checked" id="" name="" value="Forum">
+                <span class="checkmark"></span>
                 <lable for="Forum">Forum</lable><br>
 
-                <input type="checkbox" id="" name="" value="Additional Courses">
+                <input class="container" type="checkbox" check="checked" id="" name="" value="Additional Courses">
+                <span class="checkmark"></span>
                 <lable for="Additional Courses">Additional Courses</lable><br></div>
 
            <label for="">Any comments or suggestions?</label>
            <br>
-           <textarea name="mytext" placeholder="Enter your comment here">
-               
-           </textarea> 
+           <textarea name="mytext" placeholder="Enter your comment here"></textarea> 
           
            <br>
            <input class="submit "id="submit" type="submit" value="Submit">
