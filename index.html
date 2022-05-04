@@ -5,28 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
+
 <body>
-    <body background="images/office.jpg">
+    <body background="https://beiz.jp/images_S/cloth/cloth_00049.jpg">
     <nav>
         <h1 id="title">freeCodeCamp Survey Form</h1>
         <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
-        <form id="survey-form" action="">
+        <form class="survey" id="survey-form" action="">
             <br><label for="NAME" id="name">Name
             <br><input type="text" name="NAME" placeholder="Enter your name" id="name-label">
            </label><br>
 
-           <label for="E-MAIL" id="e-mail">E-Mail
+           <label  for="E-MAIL" id="e-mail">E-Mail
             <br><input type="email" name="E-MAIL" placeholder="Enter your e-mail" id="email-label">
            </label><br>
 
-           <label for="AGE" id="number" >Age(optional)
+           <label  for="AGE" id="number" >Age(optional)
             <br><input type="number" name="AGE" placeholder="Age" max="100" min="1" id="number-label">
            </label><br>
 
-           <label for="">Which option best describes your current role?</label><br>
-           <select name="" id="dropdown">
+           <div><label for="">Which option best describes your current role?</label><br>
+           <select  name="" id="dropdown">
             <option value="Select Curret Role">Select Curret Role</option>  
             <option value="Select Curret Role">Student</option>
             <option value="Select Curret Role">Full-Time Job</option>
@@ -37,7 +39,7 @@
 
            <label for="">Would you recommend freeCodeCamp to a friend?
 
-            <br><input type="radio" id="Definitely" name="Definitely-Maybe-NotSure" value="Definitely">
+            <br><input  type="radio" id="Definitely" name="Definitely-Maybe-NotSure" value="Definitely">
             <lable for="">Definitely</lable><br>
             <input type="radio" id="Maybe" name="Definitely-Maybe-NotSure" value="Maybe">
             <lable for="">Maybe</lable><br>
@@ -46,7 +48,7 @@
 
            </label><br>
            <label for="">What is your favorite feature of freeCodeCamp?<br></label>
-           <select name="" id="dropdown">
+           <select  name="" id="dropdown">
             <option value="Select an option">Select an option</option>
             <option value="Select an option">Challenges</option>  
             <option value="Select an option">Projects</option>
@@ -72,7 +74,7 @@
                 <input type="checkbox" id="" name="" value="Open Source Community">
                 <lable for="Open Source Community">Open Source Community</lable><br>
 
-                <input type="checkbox" id="" name="" value="">
+                <input type="checkbox" id="" name="" value="Gitter help rooms">
                 <lable for="Gitter help rooms">Gitter help rooms</lable><br>
 
                 <input type="checkbox" id="" name="" value="Videos">
@@ -88,7 +90,7 @@
                 <lable for="Forum">Forum</lable><br>
 
                 <input type="checkbox" id="" name="" value="Additional Courses">
-                <lable for="Additional Courses">Additional Courses</lable><br>
+                <lable for="Additional Courses">Additional Courses</lable><br></div>
 
            <label for="">Any comments or suggestions?</label>
            <br>
@@ -97,7 +99,7 @@
            </textarea> 
           
            <br>
-           <input id="submit" type="submit" value="submit">
+           <input class="submit "id="submit" type="submit" value="Submit">
         </form>
     </nav>
 </body>
