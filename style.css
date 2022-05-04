@@ -136,3 +136,22 @@ textarea{
     color: white;
     border: none;
     text-align: center;}
+
+  @media (min-width:992px){
+      nav{
+
+      }
+  }
+  @media (max-width:991px) {
+      h1 p{
+        height: fit-content;
+        width:auto;
+      }
+      nav{
+        /* width: 100%; */
+      }
+      form{
+        width: auto;
+      }
+      
+  }
